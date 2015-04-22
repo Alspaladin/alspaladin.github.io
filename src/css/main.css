@@ -1,0 +1,28 @@
+label {
+    display: inline-block;
+}
+input{
+    display:none;
+}
+.r{
+    font-size: 0;
+}
+.r div{
+	background:url('../../img/star-sprite.png') 0 -16px no-repeat;
+    height:16px;
+    width:18px;
+    cursor:pointer;
+}
+
+.r:hover div {
+    background-position: 0 -16px;
+}
+input:checked ~ label div {
+    background-position: 0 0;
+}
+input:checked + label div{
+  background-position: 0 -16px;
+}
+label:hover ~ label div {
+    background-position: 0 0 !important;
+}
